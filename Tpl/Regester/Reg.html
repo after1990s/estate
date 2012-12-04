@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p>
+{$error_msg}
+{$success_msg}
+</p>
+注册：<br />
+<form action="__URL__/Reg" method="post">
+<table>
+<tr>
+<td>用户名</td><td><input type="text" name="username" value="{$input_username}"/></td>
+</tr>
+<tr>
+<td>密码</td><td><input type="password" name="password" /></td>
+</tr>
+<tr>
+<td>确认密码</td><td><input type="password" name="confirm_password" /></td>
+</tr>
+<tr>
+<td>电子邮箱</td><td><input type="text" name="mail" value="{$input_mail}"/></td>
+</tr>
+<tr>
+<td>性别</td><td><input type="radio" name="sex" value="1" checked/>男  <input type="radio" name="sex" value="0" />女</td>
+</tr>
+<tr>
+<td>真实姓名</td><td><input type="text" name="realname" value="{$input_realname}"　/></td>
+</tr>
+<tr>
+<td>身份证号</td><td><input type="text" name="id_number" value="{$input_id_number}"　/></td>
+</tr><tr>
+<td>城市</td><td><input type="text" name="city" value="{$input_city}"　/></td>
+</tr>
+<tr>
+<td>详细地址</td><td><input type="text" name="detail_address" value="{$input_detail_address} "　/></td>
+</tr>
+<tr>
+<td>手机号</td><td><input type="text" name="cellphone" value="{$input_cellphone}"　/></td>
+</tr>
+<tr>
+<td>固定电话</td><td><input type="text" name="fixphone" value="{$input_fixphone} "　/></td>
+</tr>
+<tr>
+<td>公司名称</td><td><input type="text" name="company" value="{$input_company}"　/></td>
+</tr>
+<tr>
+<!--  
+<td>所属门店</td><td><input type="text" name="#" value="'.$_POST[''].'"　/></td>
+</tr>
+<tr>
+<td>小组/部门</td><td><input type="text" name="#" value="'.$_POST[''].'"　/></td>
+</tr>
+<tr>
+<td>主营小区</td><td><input type="text" name="#" value="'.$_POST[''].'"　 /></td>
+</tr>
+-->
+</table>
+<input type="checkbox" name="#" />service rule<br />
+<input type="submit" name="submit" value="提交" />
+</form>
+</body>
+</html>
