@@ -88,6 +88,7 @@ class RegesterAction extends Action
 				$newUserDetail->create();
 				$newUserDetail->user_id = $newUserId;
 				$newUserDetail->add();//即使出现错误也忽略
+			//$this->success("注册成功");
 				$this->success_msg = '<script type="text/javascript">alert(\'注册成功，请登录\');location.href=\''.WEBURL.'index.php/Index\'; </script>';
 			}
 		}

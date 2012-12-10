@@ -20,9 +20,10 @@ class UserAction extends Action
 		$this->sell_house_management = WEBURL.'index.php/User/SellHouseManagement.html';
 		$this->add_rent_house = WEBURL.'index.php/AddHouse/AddRentHouse.html';
 		$this->add_sell_house = WEBURL.'index.php/AddHouse/AddSellHouse.html';
-		
+		$this->logout = WEBURL.'index.php/User/Logout';
 		$this->display();
 	}
+	
 	public function EditInfo()
 	{
 		if ($_SESSION['user_id']==null)
@@ -159,6 +160,12 @@ class UserAction extends Action
 	public function SellHouseManagement()
 	{
 		$this->display();
+	}
+	public function logout()
+	{
+		$_SESSION['user_name'] = null;
+		$_SESSION['user_id'] = null;
+		$this->success("注销成功", WEBURL.'index.php/Index');
 	}
 }
 ?>

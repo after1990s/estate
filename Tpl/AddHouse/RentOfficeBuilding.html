@@ -1,0 +1,80 @@
+<!-- 这里只返回表单  -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form action="../addRentOfficeBuilding">
+<input type="hidden" name="rent_type" value="office_building" />
+<table>
+<tr><td>所属区域：</td><td><input type="text" value="县" name="area" /></td><td><input type="text" value="小区名称" name="subdistrict"/></td></tr>
+<tr><td>小区地址：</td><td><input type="text" name=""/></td></tr>
+<tr><td>写字楼类型：</td>
+	<td><input name="building_class" type="radio" value="1" checked>纯写字楼</td>
+ 	<td><input name="building_class" type="radio" value="2">商住楼</td>
+ 	<td><input name="building_class" type="radio" value="3">商业综合体</td>
+ 	<td><input name="building_class" type="radio" value="4">酒店写字楼</td>
+ 	<td><input name="building_class" type="radio" value="0">其他</td>
+ 	</tr>
+<tr><td>等级：</td>
+	<td><input type="text" name="building_level" value="1"/>甲</td>
+	<td><input type="text" name="building_level" value="2"/>乙</td>
+	<td><input type="text" name="building_level" value="3"/>丙</td>
+	<td><input type="text" name="building_level" value="4"/>丁</td>	</tr>
+<tr><td>建筑面积：</td>
+	<td><input type="text" name="build_space" value="0"/></td>
+	<td>平方米</td>
+	</tr>
+<tr><td>租金：</td>
+	<td><input type="text" name="price" /></td>
+	<td>元/月</td></tr>
+<tr><td>建筑年代：</td>
+	<td><input type="text" name="build_year" /></td>
+	<td>年</td></tr>
+<tr><td>所在楼层：</td>
+	<td>第</td>
+	<td><input type="text" name="floor" /></td>
+	<td>楼，共</td>
+	<td><input type="text" name="floor_total" /></td>
+	<td>楼</td>
+	</tr>
+<tr><td>朝向：</td>
+	<td><select name="foword">
+		<option value="0">      </option>
+		<option value="1">南北通透</option>
+		<option value="2">东西通透</option>
+		<option value="3">朝东</option>
+		<option value="4">朝西</option>
+		<option value="5">朝南</option>
+		<option value="6">朝北</option>
+		<option value="7">朝东南</option>
+		<option value="8">朝东北</option>
+		<option value="9">朝西南</option>
+		<option value="10">朝西北</option>
+		</select></td></tr>
+<tr><td>装修程度：</td>
+	<td><select name="fitment">
+		<option value="0">      </option>
+		<option value="1">豪华</option>
+		<option value="2">精装</option>
+		<option value="3">中等装修</option>
+		<option value="4">简装</option>
+		<option value="5">毛坯</option>
+		</select>
+	</td></tr>
+<tr><td>配套设施：</td>
+	<td><input type="checkbox" name="facility" value="货梯 "/>货梯 </td>
+	<td><input type="checkbox" name="facility" value="扶梯"/>扶梯</td>
+	<td><input type="checkbox" name="facility" value="暖气"/>暖气</td>
+	<td><input type="checkbox" name="facility" value="电梯"/>电梯</td>
+	<td><input type="checkbox" name="facility" value="车位"/>车位</td>
+
+</tr><tr>
+	<td><input type="checkbox" name="facility" value="燃气"/>燃气</td>
+	<td><input type="checkbox" name="facility" value="网络"/>网络</td>
+	<td><input type="checkbox" name="facility" value="空调"/>空调</td>
+</tr>
+<tr>
+<td>是否可分割：</td><td><input name="cut_up" type="radio" value="0">不可分割<input name="cut_up" type="radio" value="1" checked /> 可分割</td>
+</tr>
+<tr><td>房源编码：</td>
+	<td><input type="text" name="order_number"/></td><td>注意：此编号推送时会对应到各个网站的“房源信息编码”位置。</td></tr>
+</table>
+
+</form>

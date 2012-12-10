@@ -165,3 +165,4 @@ pip-log.txt
 #ThinkphpCache
 Runtime/*
 upload/*
+.svn/*

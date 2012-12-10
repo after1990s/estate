@@ -1,0 +1,1 @@
+addRentHouse和addSellHouse是页面框架。其他文件是表单。

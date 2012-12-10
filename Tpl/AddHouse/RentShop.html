@@ -1,0 +1,110 @@
+<!-- 这里只返回表单 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form action="../addRentShop">
+<input type="hidden" name="rent_type" value="rent_shop" />
+<table>
+<tr><td>所属区域：</td><td><input type="text" value="县" name="area" /></td><td><input type="text" value="小区名称" name="subdistrict"/></td></tr>
+<tr><td>小区地址：</td><td><input type="text" name=""/></td></tr>
+<tr><td>铺面类型：</td>
+	<td><input type="radio" name="shop_type" value="1" />住宅底商</td>
+	<td><input type="radio" name="shop_type" value="2" />商业街商铺</td>
+	<td><input type="radio" name="shop_type" value="3" />旅游商铺</td>
+	<td><input type="radio" name="shop_type" value="4" />写字楼配套底商</td>
+	<td><input type="radio" name="shop_type" value="5" />社区商铺</td>
+	<td><input type="radio" name="shop_type" value="6" />沿街门店</td>
+	<td><input type="radio" name="shop_type" value="7" />酒店底商</td>
+	<td><input type="radio" name="shop_type" value="8" />购物中心/综合体</td>
+	<td><input type="radio" name="shop_type" value="9" />其他</td>
+	
+<tr><td>铺面类型：</td>
+	<td><input type="radio" name="facing_type" value="1" />店铺</td>
+	<td><input type="radio" name="facing_type" value="2" />摊位</td>
+	<td><input type="radio" name="facing_type" value="3" />柜台</td>
+	<td><input type="radio" name="facing_type" value="4" />其他</td>
+	</tr>
+<tr><td>户型：</td>
+	<td><input type="text" name="bedroom" value="1"/>室</td>
+	<td><input type="text" name="toilet" value="1"/>卫生间</td>
+	</tr>
+<tr><td>建筑面积：</td>
+	<td><input type="text" name="build_space" value="0"/></td>
+	<td>平方米</td>
+	</tr>
+<tr><td>租金：</td>
+	<td><input type="text" name="price" /></td>
+	<td>元/年</td></tr>
+<tr><td>建筑年代：</td>
+	<td><input type="text" name="build_year" /></td>
+	<td>年</td></tr>
+<tr><td>所在楼层：</td>
+	<td>第</td>
+	<td><input type="text" name="floor" /></td>
+	<td>楼，共</td>
+	<td><input type="text" name="floor_total" /></td>
+	<td>楼</td>
+	</tr>
+<tr><td>朝向：</td>
+	<td><select name="foword">
+		<option value="0">      </option>
+		<option value="1">南北通透</option>
+		<option value="2">东西通透</option>
+		<option value="3">朝东</option>
+		<option value="4">朝西</option>
+		<option value="5">朝南</option>
+		<option value="6">朝北</option>
+		<option value="7">朝东南</option>
+		<option value="8">朝东北</option>
+		<option value="9">朝西南</option>
+		<option value="10">朝西北</option>
+		</select></td></tr>
+<tr><td>装修程度：</td>
+	<td><select name="fitment">
+		<option value="0">      </option>
+		<option value="1">豪华</option>
+		<option value="2">精装</option>
+		<option value="3">中等装修</option>
+		<option value="4">简装</option>
+		<option value="5">毛坯</option>
+		</select>
+	</td></tr>
+<tr><td>配套设施：</td>
+	<td><input type="checkbox" name="facility" value="电"/>电</td>
+	<td><input type="checkbox" name="facility" value="煤气/天然气"/>煤气/天然气</td>
+	<td><input type="checkbox" name="facility" value="暖气"/>暖气</td>
+	<td><input type="checkbox" name="facility" value="有线电视"/>有线电视</td>
+	<td><input type="checkbox" name="facility" value="电梯"/>电梯</td>
+	<td><input type="checkbox" name="facility" value="车位"/>车位</td>
+	<td><input type="checkbox" name="facility" value="冰箱"/>冰箱</td>
+</tr><tr>
+	<td><input type="checkbox" name="facility" value="热水器"/>热水器</td>
+	<td><input type="checkbox" name="facility" value="空调"/>空调</td>
+	<td><input type="checkbox" name="facility" value="洗衣机"/>洗衣机</td>
+	<td><input type="checkbox" name="facility" value="床"/>床</td>
+	<td><input type="checkbox" name="facility" value="其他家具"/>其他家具</td>
+	
+</tr>
+<tr><td>起租年限：</td>
+	<td><input type="text" name="minimum_age" value="阁楼"/>阁楼</td>
+	</tr>
+<tr><td>起租年限：</td>
+	<td><input type="text" name="minimum_age" value="阁楼"/>阁楼</td>
+	</tr>
+<tr><td>房源编码：</td>
+	<td><input type="text" name="order_number"/>注意：此编号推送时会对应到各个网站的“房源信息编码”位置。</td></tr>
+<tr><td>支付方式：</td>
+	<td>
+	<select name="payment_class" >
+	<option value="1">押一付三</option>
+	<option value="2">押一付一</option>
+	<option value="3">押一付六</option>
+	<option value="4">押二付三</option>
+	<option value="5">押二付二</option>
+	<option value="6">押二付一</option>
+	<option value="7">押一付十二</option>
+	<option value="8">半年付不押</option>
+	<option value="9">一年付不押</option>
+	<option value="0">其它方式</option>
+	</select></td></tr>
+</table>
+<input type="submit" name="submit" value="提交" />
+</form>
